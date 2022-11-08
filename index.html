@@ -1,0 +1,464 @@
+<html>
+    <head>
+        <title>Introdução ao HTML na Prática</title>
+    </head>
+    
+    <body>
+       <h1><strong><font color="blue">Introdução ao HTML na Prática</font> </strong></h1> 
+       
+       <hr />
+       
+       <h2 id="conteudos"><font color="red">Conteúdos</font>  </h2>
+    
+       <ol>
+            <li><a href="#apresentação"> Apresentação do curso </a>
+            <li><a href="#ferramentas"> Ferramentas Utilizadas </a></li>
+            <li><a href="#inspetor"> Inspetor de Elementos </a></li>
+            <li><a href="#estrutura"> Estrutura Básica do HTML </a></li>
+            <li><a href="#falando"> Falando sobre Tags </a></li>
+            <li><a href="#atributos"> Atributos de Tags </a></li>
+            <li><a href="#textos"> Textos </a></li>
+            <li><a href="#listas"> Listas ordenadas e não ordenadas </a></li>
+            <li><a href="#links"> Links </a></li>
+            <li><a href="#agradecimentos"> Agradecimentos </a></li>
+            <li><a href="#ref"> Referências </a></li>
+            <li><a href="#links-u"> Links úteis </a></li>
+       </ol>
+       
+       <h2 id="apresentação"><font color="red">Apresentação do curso</font></h2>
+       
+       <small> <a href="#conteudos">Voltar ao topo</a></small>
+       
+    <p> Seja bem vindo ao curso de Introdução ao HTML na prática!
+    </p>
+    <p> 
+        O ojetivo geral desse curso é que o estudante aprenda a instalar e configurar o ambiente de desenvolvimento,
+        entender o funcionamento do inspetor de elementos do navegador e criar sua primeira página HTML.
+    </p>
+    <p> Isso significa que, ao final desse curso, o estudante será capaz de criar seu próprio site! De forma gradual,
+        serão apresentadas ferramentas e conceitos que auxiliem na criação do conjunto de páginas que irá caracterizar o site.
+        Então, sem mais delongas, vamos dar início ao curso!
+    </p>
+
+       <h2 id="ferramentas"><font color="red">Ferramentas Utilizadas</font></h2>
+       
+       <small> <a href="#conteudos">Voltar ao topo</a></small>
+       
+       <h3> Virtual Studio Code </h3>
+       
+       <h4> Download do <abbr title="Visual Studio Code">VSC</abbr> </h4>
+       
+    <p> Antes de começar a codar, precisamos de um ambiente adequado para isso. Desse modo, o primeiro 
+        passo do curso será o donwload do software Visual Studio Code (VSC). O <abbr title="Visual Studio Code">VSC</abbr> é uma ferramenta de código aberto, 
+        o que significa que ele é de graça. Poderiam ser utilizadas outras ferramenas, entretando, para este curso,
+        foi escolhido o <abbr title="Visual Studio Code">VSC</abbr>. Você pode encontrar o link para download clicando <a href="https://code.visualstudio.com/" title="Download do VSC" target="blank">aqui</a> 
+        ou na seção <a href="#links-u">Links úteis</a>.
+    </p>
+    <p> Ao clicar no site, ele já irá detectar o sistema operacional utilizado e irá indicar a versão estável do <i>software</i>.
+        Uma vez baixado, você deve abrir o programa e efetuar a instalação, aceitando as licensas, definindo o local de 
+        instalação (podendo manter a padrão sugerida), e seguindo até o início da instalação.
+    </p>
+        
+        <h4> Utilizando o <abbr title="Visual Studio Code">VSC</abbr> </h4>
+        
+    <p> Após o término da instalação, inicie o programa. Caso ele demande mais permissões (do windows por exemplo) permita 
+        isso acontece pois o <abbr title="Visual Studio Code">VSC</abbr> utiliza a internet em algumas de suas instâncias.
+    </p>
+    <p> A tela principal do <abbr title="Visual Studio Code">VSC</abbr> é composta pela parte onde você irá montar a sua página, e a parte mais à
+        esquerda se econtra a estrutura de pastas e arquivos, e a faixa na lateral esqueda com menus, dos quais
+        os que mais serão utilizados são o Explorador e as Extensões, esta última adiciona funcionalidades ao 
+        seu <abbr title="Visual Studio Code">VSC</abbr>.
+    </p>
+
+        <h5> <i>Live Server</i></h5>
+        
+    <p> Antes de continuarmos, será necessária a instalação da extensão <i>Live Server</i>. 
+        Para tal basta clicar em Extensões, na barra de pesquisa digitar "live server" e clicar para instalar.
+        Essa extensão irá nos possibilitar acompanhar a construção do nosso site a medida que iremos evoluir na 
+        programação em HTML e adicionar novos itens às páginas.
+    </p>
+        
+        <h5> Emmet </h5>
+        
+    <p> Caso você não esteja utilizando o <abbr title="Visual Studio Code">VSC</abbr> e o programa de sua preferência permita a instalação de plug-ins, 
+        recomendamos a instalação do Emmet. Esse plug-in serve para criar <i> templates </i> que podem facilitar 
+        a criação de páginas do zero.
+    </p>
+
+        <h3> Navegador</h3>
+        
+    <p> Um ponto importante é que para testarmos o nosso código, é necessário a utilização de um navegador.
+        Para a criação desse curso, foi utilizado o Google Chrome, mas outros navegadores como Firefox possuem
+        a mesma finalidade. Isso posto, em algumas aulas, serão utilizadas funcionalidades específicas do 
+        Google Chorme, recomendamos, por isso, que recomendamos que o estudante realize o <i>download</i> desse navegador.
+        Clique <a href="https://www.google.com/intl/pt-BR/chrome/" title="Download do Google Chrome" target="blank">aqui</a>
+        para baixar o Google Chrome, ou na seção <a href="#links-u"> Links úteis</a>.
+    </p>
+
+       <h2 id="inspetor"><font color="red">Inspetor de Elementos</font></h2>
+       
+       <small> <a href="#conteudos">Voltar ao topo</a></small>
+       
+    <p> Uma ferramenta muito útil para o desenvolvedor é o Inspetor de Elementos. Essa é uma ferramenta
+        disponibilizada por navegadores, como Google Chrome, Firefox, Ópera, etc. Novamente, para este curso
+        utilizaremos o Google Chrome. 
+    </p> 
+    <p> Para acessar a ferramenta é necessário estar em um site, pressionar o F12 no teclado, o que irá abrir 
+        o console. Alternativamente, você pode clicar nos três pontos, situados no canto superior direito, em seguida em
+        "mais ferramentas" e por fim "Ferramentas do desenvolvedor". Com o console aberto, 
+        é possível verificar algumas caracerísticas que foram utilizadas na página.
+    </p>
+    <p> No canto superior esquerdo do console está o ícone de inspeção de elementos. Ao clicar nele, 
+        você poderá clicar em um elemento da página para verificar as suas características e como 
+        ele foi formatado (em <u>CSS</u>). Também funciona ao se clicar em uma das linhas do console, 
+        que irá destacar o elemento na página o qual a linha se refere.
+    </p>
+    <p> Além de verificar as características que aparecem no novo console do lado direito, você pode
+        alterar essas características, como a cor do elemento. Importante ressaltar que isso não altera o 
+        site em sim, e sim a sua vizualização. Essa informação também é válida para o console HTML, nos quais 
+        as linhas possuem os elementos programados.
+    </p>
+    <p> Essa ferramenta auxilia no estudo em HTML, além de apresentar ao vizualizador opções de 
+        comandos que possam ser utilizados em futuros projetos.
+    </p>
+
+       <h2 id="estrutura"><font color="red">Estrutura Básica do HTML</font></h2>
+       
+       <small> <a href="#conteudos">Voltar ao topo</a></small>
+       
+    <p> Neste tópico iremos tratar da estrutura básica de um arquivo HTML. Para iniciarmos, 
+        abra o Visual Studio Code e defina a pasta onde será salvo o projeto clicando em "Arquivo",
+        "Abrir Pasta" e selecione a de sua preferência.
+    </p>
+    <p> Após a seleção da pasta, na área do Explorador, o <abbr title="Visual Studio Code">VSC</abbr> irá mostrar para você no lado esquerdo toda a estrutura que está
+        sendo desenvolvida para as suas páginas. Clique no símbolo da páginas com um sinal "+" para criar
+        um novo arquivo. Renomeie o arquivo criado de "index", que é o arquivo inicial (<u> boas práticas
+        de programação.</u>).
+    </p>
+        
+        <h3> Observação </h3>
+        
+    <p> Para observar a página no navegador pelo <i>Live Server</i>, o usuário deverá ir até
+        o navegador e clicar com o botão direito no arquivo gerado (como, por exemplo, o arquivo index.html), 
+        selecionar a opção "<i>open with Live Server</i>. Para observar as alterações, 
+        o programador deve salvar as alterações no <abbr title="Visual Studio Code">VSC</abbr> pressionando "Crtl+S" ou indo em "Arquivo"
+        e depois pressionar "Salvar".
+    </p> 
+
+        <h3> Tags de estruturação </h3>
+        
+        <h4 id="html"> HTLM </h4>
+        
+    <p> É a parte onde está condida a programação da página, definindo que os comando inseridos
+        pertencem à um arquivo HTML. Iniciando o arquivo com "&lthtml&gt" e o encerrando em 
+        "&lt/html&gt".
+    </p>
+    <p> Importante ressaltar que toda a tag que será utilizada em HTML deverá conter os símbolos "&lt" 
+        e "&gt" e um texto característico entre eles. Com o decorrer do curso ficará mais visível 
+        esse padrão. O simbolo "/" presente no início de uma tag denota que o programador está 
+        encerrando a área de atuação dela.
+    </p>
+            
+    <p> A tag "&lthtml&gt" é dividida em dois seguimentos: 
+    </p>
+        
+        <h5 id="head"> <i>Head</i> </h5>
+        
+    <p> A cabeça, ou cabeçalho irá carregar informações antes de exibir para o usuário e podem ser 
+        utilizadas outras tags para configuração como a tag <i>title</i>.
+    </p>
+        
+        <h6> <i>Title</i></h6>
+        
+    <p> A tag "<i>Title</i>" é utilizada dentro do da tag "<i>head</i>"" para dar o título da página.
+    </p>
+        
+        <h5 id="body"> <i>Body</i> </h5>
+        
+    <p> Já o <i>body</i>, ou corpo, é onde estará contido o que será apresentado para o usuário na página.
+    </p>
+    <p> Essas três tags compoêm a parte básica estrutural do arquivo HTLM. No próximo tópico, 
+        veremos o que são essas tão mencionadas tags e como elas auxiliam e modificam a página.
+    </p>
+
+       <h2 id="falando"><font color="red">Falando sobre Tags</font></h2>
+       
+       <small> <a href="#conteudos">Voltar ao topo</a></small>
+       
+    <p> Tags são elementos que inserem e delimitam funções que tem como objetivo
+        caracterizar e modificar como o seu arquivo HTML irá ser apresentado para o usuário da página.
+        No tópico passado, introduzimos três tags que constituem a estrutura básica de um arquivo HTML, 
+        as tags <a href="#html">&lthtml&gt</a>, <a href="#head">&lthead&gt</a> e 
+        <a href="#body">&ltbody&gt</a>. 
+    </p>
+    <p> Existem milhares de tipos de tags, como por exemplo as tags de alteração de texto &lti&gt, &ltstrong&gt
+        e &ltu&gt, que tem as funções de deixar o texto em itálico, negrito e sublinhado. 
+        Elas funcionam da seguinte forma, para deixar o texto com a característica escolhida, "abra" a 
+        tag, por exemplo &ltstrong&gt, digite o texto e feche a tag, &lt/strong&gt. Caso você esteja usando 
+        o <abbr title="Visual Studio Code">VSC</abbr>, ao abrir uma tag ele já irá sugerir o seu fechamento ao lado, o que pode lhe poupar tempo.
+    </p>
+    <p> Para combinar tags, basta abrir uma tag, abrir a outra, digitar o texto, e fechar na ordem oposta 
+        de abertua, se você começou com a tag &ltstrong&gt e depois inseriu a tag &lti&gt, 
+        deve fechar primeiro a última tag inserida e caminhando de trás para frente até o fechamento da primeira tag.
+        Lembrando que, se você deseja que apenas parte de um texto seja afetado pelo recurso escolhido,
+        abra a tag imediatamente antes do texto selecionado, e a feche logo após.
+    </p> 
+    <p> Importante ressaltar, existem tags que não precisam de tag fechamento, como a tag &ltinput&gt, 
+        que tem a função de inserir um campo na sua página para interação do usuário. Tags desse tipo se 
+        "auto fecham", não necessitando da estutura vista nas tags mencionadas no parágrafo anterior. 
+    </p>
+    <p> Essa é a lógica básica que envolve a utilização de tags. É importante pesquisar o que se deseja
+        e como a tag se comporta antes de utilizá-la. Além disso, no próximo tópico, veremos como
+        é possível modificar o comportamento das tags para nos retornar diferentes respostas, é o que 
+        chamamos de "Atributos".
+    </p>
+
+       <h2 id="atributos"><font color="red">Atributos de Tags</font></h2>
+       
+       <small> <a href="#conteudos">Voltar ao topo</a></small>
+       
+    <p> As tags possuem comandos que podem alterar as configurações de seu comportamento básico. 
+        Os atributos podem ser os comuns de todas as tags, e os específicos de cada.
+    </p>
+        
+        <h3>Atributos globais</h3>
+
+        <h4>id</h4>
+        
+    <p> Um exemplo de tag global é o "id", que gera uma identificação ao elemento escolhido. 
+         Para adicionar uma identificação, basta ir dentro da tag e digitar id="___" 
+        (no <abbr title="Visual Studio Code">VSC</abbr>, as aspas carregam automáticamente), onde no espaço entre as aspas é digitado o 
+        texto de identificação. Assim, por exemplo, você poderá identificar no javascript 
+        qual elemento se deseja mexer.
+    </p>
+        
+        <h4><i>style</i></h4>
+        
+        <p> Outro exemplo de atributo é o <i>style</i>, que tem a função de formatar o estilo do seu texto.
+        Por exemplo, mudar a cor, comando style="color: blue". Esse é um exemplo de comando CSS, que tem 
+        justamente a finalidade de formatação da página HTML de modo estético.</p>
+        
+        <h4>class</h4>
+
+    <p> Além desses, pode-se inserir o atributo "class", que irá categorizar elementos. Sua utilização é
+        similar ao atributo "id", mas, diferentemente do atributo "id", o "class" irá inserir 
+        o elemento escolhido em um grupo de elementos. Assim, o desenvolvedor poderá definir 
+        características específicas para aquele grupo, como cores e estilo. 
+        Atributos que buscam formatar ou personalizar a aparência da página serão melhor detalhados
+        no curso de CSS.
+    </p>
+        
+        <h3> Atributos específicos</h3>
+
+        <h4>Exemplos na tag <i>input</i></h4>
+
+    <p> Como visto no tópico <a href="#falando">Falando sobre Tags</a>, o comando &ltinput&gt
+        insere um campo digitável na página. Um exemplo de atributo específico para essa tag é "<i>type</i>"
+        que define qual o tipo de entrada pode ser utilizada no campo digitável. Caso você escreva
+        &ltinput type="text"&gt, o campo só receberá entradas de texto, já se você moficiar para 
+        &ltinput type="number"&gt, o campo agora só irá aceitar números (ressala: aceita a letra "e"
+        por questões de números exponenciais). Curiosamente, você também pode aplicar esse atributo 
+        seguinte froma: &ltinput type="color"&gt, assim o campo interativo será definido por cores
+        que podem ser selecionadas pelo usuário.
+    </p>
+        
+        <h4>Exemplos na tag img</h4>
+
+    <p>Ao se utilizar a tag img, é necessário acrescentar minimamente um atributo para que 
+        ela possa funcionar de maneira correta. O atributo em questão é o src, do inglês <i>source</i>
+        que significa a fonte da imagem, que pode ser um endereço na internet ou no seu próprio computador.
+    </p>
+    <p> Além da fonte da imagem, muitas vezes será necessário formatar o tamanho dela, e isso pode ser
+        executado através do atrabuto <i>width</i>, no qual você pode definir em pixels 
+        o tamanho da imagem.
+    </p>
+    <p> Esses são alguns exemplos de atributos que podem ser inseridos nas tags, o importante, assim como
+        pesquisar como usar uma tag, é saber quais atributos ela pode suportar. Ao decorrer do curso
+        ao se falar a palavra, atributo, o desenvolvedor em potêncial deve já associar ao que foi
+        explicado nesse tópico.
+    </p>
+        
+            
+       <h2 id="textos"><font color="red">Textos</font></h2>
+
+       <small> <a href="#conteudos">Voltar ao topo</a></small>
+
+    <p> Este tópico abordará a tipografia da sua página e as principais tags relacionadas 
+        a configuração de textos. Durante o tópico você pode utilizar a ferramenta do desenvolvedor
+       para verificar os pontos apresentados, bem como o espaçamento automático (na cor laranja
+       caso você esteja utilizando o Google Chrome) que o navegador formata automaticamente dependendo
+       do tipo de tag utilizada. Além disso, verificar que a página também irá modificar o tamanho do 
+       texto com base na janela apresentada.
+    </p>
+
+       <h3><i>Headers</i></h3>
+       
+    <p> <i>Hearders</i> ou cabeçalhos, servem para criar níveis de título em sua página.
+       Você deve ter reparado que essa página está estruturada em níveis, com tópicos e subtópicos sendo
+       diferenciados por tamanho. Quando maior, mais alto na hierarquia. Para configurar esses
+       cabeçalhos, utilizamos a tag &lthx&gt, onde o "x" deve ser substituído pelo nível a ser designado
+       (de 1 a 6). Logo, &lth1&gt corresponde ao primeiro nível, &lth2&gt ao segundo e assim sucessivamente.
+    </p>
+
+       <h3>Parágrafos</h3>
+       
+    <p> Já o corpo do texto não é um tipo de cabeçalho, e sim parágrafos. Para designar um texto como
+        tal, utilizamos a tag &ltp&gt. A cada parágrafo novo, devemos abrir uma nova tag e 
+        fechá-la ao final.
+    </p>
+       
+       <h3>Citações</h3>
+
+    <p>Além de textos produzidos por você, talvez haja a necessidade de incluir citações de outras
+        pessoas. Para facilitar a formatação desse tipo de texto, é utilizada a tag &ltblockquote&gt.
+    </p>
+
+        <blockquote>42.</blockquote>
+
+    <p> Essa tag desprende o conteúdo dela do restante do texto. Repare que podemos utilizar outras
+        tags, como a &ltp&gt, para melhorar a apresentação dessa citação.
+    </p>
+
+        <blockquote><i>"42."</i></blockquote>
+        <blockquote>O guia do Mochileiro da Galáxias.</blockquote>
+
+    <p> Em CSS podemos formatar ainda melhor o texto, mas <mark id="marcador"><u>é necessário ter um HTML 
+            bem estruturado para poder trabalhar melhor com o CSS.</u></mark>
+    </p>
+        
+        <h3>Exemplos de tags de formatação</h3>
+
+    <p> No tópico <a href="#falando"> Falando sobre Tags </a> vimos &lti&gt, &ltstrong&gt
+        e &ltu&gt, que tem as funções de deixar o texto em itálico, negrito e sublinhado.
+        Além dessas, podemos citar algumas outras: A tag &ltmark&gt, que acrescenta um destaque como se 
+        fosse um <a href="#marcador" title="exemplo de uso da tag">marcador de texto</a>;
+        As tags &ltsup&gt e &ltsub&gt, que colocam textos como índices superiores e inferiores,
+        respectivamente. 
+    </p>
+    <p> Exemplos: 2<sup>2</sup>é igual a 4. H<sub>2</sub>O é a formula da água.</p>
+
+    <p> Outro exemplo que pode vir a calhar é a utilização da tag &ltdel&gt, que indica a retirada de uma parte do texto,
+        o que pode ser visto em leis quando sofrem alterações. É uma informação que não está atualizada, mas que não deve
+        ser apagada do texto.
+    </p>
+
+    <p>Exemplo:<del>O horário de verão irá começar à meia noite.</del>
+    </p>
+
+    <p>Esses são alguns exemplos de tags que podemos utilizar para modificar o texto em nossos arquivos
+        HTML. Para um maior apronfudamento, sugerimos o site da 
+        <a href="https://www.w3schools.com/tags/default.asp" title="Lista de Tags HTML" target="blank">W<sup>3</sup>
+        schools</a>, que possui uma lista numerosa de tags que podem ser utilizadas.
+    </p>
+
+       <h2 id="listas"><font color="red">Listas ordenadas e não ordenadas</font></h2>
+
+       <small> <a href="#conteudos">Voltar ao topo</a></small>
+
+    <p> Um recurso muito utilizado em HTML é a criação de listas. Basicamente há
+        dois tipos de lista que iremos montar, as ordenadas, e as não ordenadas.
+    </p>
+
+       <h3><a href="#conteudos" title="Exemplo de lista ordenada"> Listas Ordenadas </a> </h3>
+    <p> Para montar uma lista ordenada, a tag necessária é &ltol&gt. Entretanto, somente
+        a abertura desta tag não basta para inserir os dados da lista, é necessário também
+        elencar os itens utilizando a tag &ltli&gt. Cada abrir e fechar dessa tag será designado
+        como um item diferente da lista. O nome "lista ordenada" se deve ao fato de que 
+        ela irá inserir uma numeração em cada item.
+    </p>
+          
+        <h3><a href="#links-u" title="Exemplo de lista não ordenada"> Listas Não Ordenadas </a> </h3>
+    <p> Já para montar uma lista não ordenada, a tag necessária é a &ltul&gt. Análogamente 
+        é necessário também elencar os itens utilizando a tag &ltli&gt. Diferentemente 
+        da lista ordenada, a não ordenada utilizará marcadores ao invés de números.
+    </p>
+
+       <h2 id="links"><font color="red">Links</font></h2>
+
+       <small> <a href="#conteudos">Voltar ao topo</a></small>
+
+    <p> Para o último conteúdo desse curso, iremos abordar a navegação do nosso site. Você deve 
+        ter percebido que mesmo essa página simples possui textos sublinhados em cor azulada, os quais,
+        se pressionados, te direcionam para alguma <a href="#conteudos">parte da página</a>, 
+        <a href="aboutme.html" title="Sobre mim" target="_self"> para uma outra página do site</a>, 
+        ou <a href="https://www.dio.me/" title="site da DIO" target="blank">para fora desse site</a>, 
+        direcionando para uma página da internet. Esses são os links.
+    </p>
+    <p> Para utilizarmos links utilizamos a tag &lta&gt, que designa uma "ancoragem", ou seja, um vínculo 
+        entre o elemento ancorado e seu destino, gerando o laço, ou link. Além da tag &lta&gt, é necessária
+        a utilização de um atributo, o "href", onde o programador irá estabelecer o destino do link 
+        gerado, podendo ser como os tipos que você verificou nesse site.
+        A linha de código fica dessa forma: &lta href="endereço"&gt texto que irá aparecer no site &lt/a&gt.
+        O texto escolhido ficará em azul e sublinhado, ao passo que clicar nele irá direcionar o usuário para 
+        o endereço estabelecido no "href". Ainda, para que o link seja aberto em uma nova aba, o desenvolvedor
+        deve acrescentar o atributo "<i>target</i>" e o igualar a <i>_blank</i>, dentro da tag "a" de abertura.
+    </p>
+    <p>Exemplo: &lta href="https://www.nttdata.com/global/en/" target="_blank" &gt Site da NTT Data Global 
+        &lt/a&gt
+    </p>
+    <p><strong>Observação</strong>: Ao não se utilizar o atributo <i>target</i>, o seu link se comporta como se estivesse escrito
+        " "target="_self" ", implicando a abertura do link na mesma aba.
+    </p>
+
+    <p>Ainda, se pode adicionar um título que irá aparecer ao usuário quando ele passar o mouse
+        por cima do link ancorado, utilizando o atribuito <i>title</i>. Sua inserção no código é similar 
+        ao atributo <i>blank</i>.  
+    </p>  
+
+    <p> Para se navegar em páginas dentro do próprio site, a lógica seguida é a mesma. Contudo, é necessário
+        primeiramente criar uma nova página no <abbr title="Visual Studio Code">VSC</abbr>. Após ir em "Explorador" e clicar na opção "Novo Arquivo..."
+        insira o nome da página acrescentando .html ao final. A configuração é análoga ao que está sendo feita
+        na página principal, mudando apenas os conteúdos.
+    </p>
+    
+    <p> Após a criação da nova página, basta colocar o nome dela no campo de endereço do "href". 
+        É importante lembrar que é necessário criar um link de volta para a página principal nas páginas
+        auxiliares.
+    </p>
+    <p> Boas práticas de programação indicam que links para páginas do site sejam abertas na mesma aba, 
+        enquanto que links externos sejam abertos em uma nova aba.
+    </p>
+
+        <h2 id="agradecimentos"><font color="red">Agradecimentos</font></h2>
+
+       <small> <a href="#conteudos">Voltar ao topo</a></small>
+
+    <p> Agradecemos a todos que acompanharam esse curso! Toda a página foi programada com o conhecimento
+        obtido durante os tópicos abordados. Dúvidas e sugestões sempre são bem vindas, na seção 
+        <a href="#ref">Referências</a> vocês podem encontrar mais sobre mim e meus canais de comunicação.
+    </p>
+    <p> Além disso, agradecemos imensamente a equipe da DIO, em especial ao Diogo Mainardes que foi 
+            quem realmente deu a base necessária para todo o texto escrito nessa página, 
+            que foi uma forma muito prática e inteligente de aplicar os conhecimentos obtidos no curso.
+            Muito obrigado mesmo!
+    </p>
+       
+        <h2 id="ref"><font color="red">Referências</font></h2>
+
+       <small> <a href="#conteudos">Voltar ao topo</a></small>
+       
+       <ul>
+        <li> <a href="aboutme.html" target="_self"> Sobre mim.</a></li>
+        <li> <a href="https://www.linkedin.com/in/diogomainardes/" target="_blank"> LinkedIn do Diogo Mainardes.</a></li>
+        <li> <a href="https://academiapme-my.sharepoint.com/:p:/g/personal/renato_dio_me/EUBD7085ULpApq4i1_8fWfMBhVJQMyxt2K_d1sJOhRUN_w?rtime=p6s9VU7A2kg" target="_blank"> 
+            Material do Curso de HTML do Diogo Mainardes.</a></li>
+        <li> <a href="https://www.dio.me/" target="_blank"> Site da DIO.</a></li>
+        <li> <a href="https://code.visualstudio.com/" target="_blank"> Visual Studio Code.</a></li>
+        <li> <a href="https://www.google.com/intl/pt-BR/chrome/" target="_blank"> Google Chrome.</a></li>
+        <li><a href="https://www.w3schools.com/tags/default.asp" title="Lista de Tags HTML" target="_blank">W<sup>3</sup>
+            schools</a></li>
+       </ul>
+   
+       <h2 id="links-u"><font color="red">Links úteis</font></h2>
+       
+       <small> <a href="#conteudos">Voltar ao topo</a></small>
+
+       <ul>
+        <li> <a href="https://youtu.be/3oSIqIqzN3M" target="_blank"> 5 MINUTOS DE HTML PARA INICIAR EM PROGRAMAÇÃO!</a> </li>
+        <li> <a href="https://youtu.be/a29-lfFi9Qc" target="_blank"> Live Coding - Multiverso Spider-Man: Criando um site com HTML, CSS e JavaScript - Parte 1.</a> </li>
+        <li> <a href="https://youtu.be/0IY5TJwAbcQ" target="_blank"> Live Coding - Multiverso Spider-Man: Criando um site com HTML, CSS e JavaScript - Parte 2.</a> </li>
+        <li> <a href="https://www.devmedia.com.br/boas-praticas-de-programacao/31163" target="_blank"> Boas práticas de programação.</a> </li>
+       </ul>
+         
+    </body>
+</html>
